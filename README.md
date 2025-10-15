@@ -11,3 +11,4 @@ More details on each field:
 
 Data Cleaning:
 - Remove canceled or adjusted transactions (InvoiceNo being non-numeric, starting with C or A)
+- Converted InvoiceDate to datetime format and computed TotalPrice = Quantity * UnitPrice
