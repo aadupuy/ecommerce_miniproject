@@ -7,4 +7,7 @@ Dataset: Online Retail Dataset from Kaggle
 - Fields: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
 More details on each field:
-- InvoiceNo: 25,900 unique values ; either numeric (completed transaction), starting with C (canceled transation)
+- InvoiceNo: 25,900 unique values ; either numeric (completed transaction), starting with C (canceled transation) or A (adjusted transaction)
+
+Data Cleaning:
+- Remove canceled or adjusted transactions (InvoiceNo being non-numeric, starting with C or A)
