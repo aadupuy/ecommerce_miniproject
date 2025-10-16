@@ -28,3 +28,8 @@ Feature Engineering
 - Defined user-item interaction features: purchase frequency (how many times a user bought the same item), last purchase gap (number of days between a user buys the same item)
 - Encoded categorical features (strings to integers): StockCode, Country (we do not need to encode Description since an item can already be identified by its StockCode)
 
+Baseline Model
+The goal is to predict the purchase likelihood for user-item pairs. First we are trying a simple logistic regression model.
+- Defined features to use and target y (for which we had to generate negative samples by randomly pairing users with items they have not purchased)
+- Train/test split 80-20 with features scaling and stratify
+- Model trained for 1000 iterations + evaluated
