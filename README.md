@@ -21,3 +21,10 @@ Exploratory Data Analysis (EDA)
 
 Looked for seasonality or patterns by month / week / day
 - Number of transaction or revenue per month show a spike around November / December: holiday season
+
+Feature Engineering
+- Defined user features: total purchases per user, average basket size per user, recency (number of days since last purchase) per user
+- Defined item features: total quantity sold per item, average price per item, item popularity (number of unique buyers)
+- Defined user-item interaction features: purchase frequency (how many times a user bought the same item), last purchase gap (number of days between a user buys the same item)
+- Encoded categorical features (strings to integers): StockCode, Country (we do not need to encode Description since an item can already be identified by its StockCode)
+
